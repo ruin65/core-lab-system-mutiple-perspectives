@@ -1,0 +1,119 @@
+@font-face {
+    font-family: title1;
+    src: url(sh.ttf);
+}
+
+@font-face {
+    font-family: title2;
+    src: url(regular.ttf);
+}
+
+h1 {
+    font-family: title2;
+    height: 200vh; /* 创建足够高的页面以便滚动 */
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+  
+}
+
+p{
+    margin-top: 15%;
+}
+
+
+body {
+    font-family: title2;
+    height: 200vh; /* 创建足够高的页面以便滚动 */
+    margin: 0;
+    padding: 30px;
+    background-color: #000000;
+}
+
+.container {
+    text-align: left;
+    padding: 100px;
+}
+
+.text {
+    font-size: 20px;
+    transition: opacity 0.5s; /* 添加渐变效果 */
+    color: #ffffff;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: right; /* 居中对齐标签 */
+    align-items: right; /* 垂直居中对齐标签 */
+    padding: 0px; /* 调整导航栏的内边距 */
+    position: absolute;
+    top: 1%;
+    left: 95%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.image1 {
+    position: absolute;
+    top: 100%;
+    left: 55%;
+}
+
+.image2 {
+    position: absolute;
+    top: 115%;
+    left: 10%;
+    max-width: 10%;
+    height: auto;
+}
+
+.image3 {
+    position: absolute;
+    top: 210%;
+    left: 15%;
+    max-width: 150%;
+    height: auto;
+}
+
+.image4 {
+    position: absolute;
+    top: 240%;
+    left: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.image5 {
+    position: absolute;
+    top: 260%;
+    left: 10%;
+    max-width: 100%;
+    height: auto;
+}
+
+.image6 {
+    position: absolute;
+    top: 295%;
+    left: 53%;
+    max-width: 100%;
+    height: auto;
+}

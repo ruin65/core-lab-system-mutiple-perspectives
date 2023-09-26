@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wong Kar-wai</title>
+    <link rel="stylesheet" href="back.css">
+</head>
+<body>
+    <div class="video">
+        <video autoplay loop muted>
+            <source src="hk.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container">
+        <div class="text">
+            <h1>Wong KAR-WAI<br><br><br><br></h1>
+            <p>Wong Kar-wai is a renowned Hong Kong filmmaker known for his visually stunning and emotionally resonant cinema. With a distinctive style characterized by lush cinematography, intricate narratives, and a focus on themes of love, longing, and urban solitude, Wong has left an indelible mark on world cinema. His films, including "In the Mood for Love" and "Chungking Express," have garnered critical acclaim and a dedicated international following. Wong's ability to capture the essence of human emotions and relationships through his unique storytelling and aesthetics has solidified his status as one of the most influential filmmakers of his generation.<br><br><br><br><br><br><br><br></p>
+        </div>
+        <div class="image3">
+            <img src="wjw.jpeg">
+        </div>
+
+    <script>
+        // 使用JavaScript检测滚动事件
+        window.addEventListener('scroll', function () {
+            const text = document.querySelector('.text');
+            const image3 = document.querySelector('.image3');
+            const scrollY = window.scrollY;
+
+            // 当滚动到特定位置时显示图片并淡化文字
+            if (scrollY >= 100) { // 调整此值以控制何时显示图片
+                image3.style.display = 'block';
+                text.style.opacity = '0.1'; // 调整透明度
+            } else {
+                image3.style.display = 'none';
+                text.style.opacity = '1';
+            }
+        });
+    </script>
+
+<nav>
+    <ul>
+        <li><a href="index.html">BACK</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>

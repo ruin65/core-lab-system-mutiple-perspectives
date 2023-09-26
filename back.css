@@ -1,0 +1,102 @@
+@font-face {
+    font-family: title1;
+    src: url(sh.ttf);
+}
+
+@font-face {
+    font-family: title2;
+    src: url(regular.ttf);
+}
+
+h1 {
+    font-family: title2;
+    height: 200vh; /* 创建足够高的页面以便滚动 */
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+  
+}
+
+
+p{
+    margin-top: 15%;
+}
+
+body {
+    font-family: title2;
+    height: 200vh; /* 创建足够高的页面以便滚动 */
+    margin: 0;
+    padding: 30px;
+    background-color: #000000;
+}
+
+.container {
+    text-align: left;
+    padding: 100px;
+}
+
+.text {
+    font-size: 20px;
+    transition: opacity 0.5s; /* 添加渐变效果 */
+    color: #ffffff;
+}
+
+.image1 {
+    display: none; /* 初始时隐藏图片 */
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}
+
+.image2 {
+    display: none; /* 初始时隐藏图片 */
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    max-width: 10%;
+    height: auto;
+}
+
+.image3 {
+    display: none; /* 初始时隐藏图片 */
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+video {
+    display: none; /* 初始时隐藏图片 */
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%; /* 设置视频宽度为100%，填充整个容器 */
+    height: 100%; /* 设置视频高度为100%，填充整个容器 */
+    object-fit: cover; /* 如果视频尺寸与容器不匹配，保持比例并填充容器 */
+}
+
+
+
+
+
+nav ul {
+    list-style-type: none;
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: right; /* 居中对齐标签 */
+    align-items: right; /* 垂直居中对齐标签 */
+    padding: 0px; /* 调整导航栏的内边距 */
+    position: absolute;
+    top: 1%;
+    left: 95%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+}

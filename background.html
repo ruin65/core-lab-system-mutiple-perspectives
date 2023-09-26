@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK</title>
+    <link rel="stylesheet" href="back.css">
+</head>
+<body>
+    <div class="video">
+        <video autoplay loop muted>
+            <source src="hk.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container">
+        <div class="text">
+            <h1> HONG KONG<br><br><br><br></h1>
+            <p>Hong Kong, a city that effortlessly bridges the gap between nostalgia and modernity, encapsulates the spirit of Wong Kar-wai's cinematic masterpieces. As you wander through the bustling streets and gleaming skyscrapers, you'll find that the soul of 1960s Hong Kong is still very much alive.<br><br><br><br>Hong Kong is a place where tradition meets innovation, East meets West, and history meets the future. It's a city that continues to inspire creativity and captivate the hearts of both locals and visitors, just like Wong Kar-wai's mesmerizing films. Come and immerse yourself in the enchanting tapestry of Hong Kong, where every corner tells a story and every moment is a cinematic experience.<br><br><br><br><br><br></p>
+        </div>
+        <div class="image1">
+            <img src="hk1.jpeg">
+        </div>
+        <div class="image2">
+            <img src="hk2.jpeg">
+        </div>
+    </div>
+
+    <script>
+        // 使用JavaScript检测滚动事件
+        window.addEventListener('scroll', function () {
+            const text = document.querySelector('.text');
+            const image1 = document.querySelector('.image1');
+            const image2 = document.querySelector('.image2');
+            const video = document.querySelector('video');
+            const scrollY = window.scrollY;
+
+            // 当滚动到特定位置时显示图片并淡化文字
+            if (scrollY >= 100) { // 调整此值以控制何时显示图片
+                image1.style.display = 'block';
+                image2.style.display = 'block';
+                video.style.display = 'block';
+                text.style.opacity = '0.1'; // 调整透明度
+            } else {
+                image1.style.display = 'none';
+                image2.style.display = 'none';
+                video.style.display = 'none';
+                text.style.opacity = '1';
+            }
+        });
+    </script>
+
+<nav>
+    <ul>
+        <li><a href="index.html">BACK</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>
